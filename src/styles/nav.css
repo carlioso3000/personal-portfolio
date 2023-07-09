@@ -1,0 +1,60 @@
+.nav {
+  width: 100%;
+  display: flex;
+  color: white;
+  height: 100px;
+  padding-top: 50px;
+  position: sticky;
+  top: 0%;
+}
+
+ol {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  color: green;
+  font-weight: 800;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+.nav ol li a {
+  color: var(--color1);
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.7em;font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.logo {
+  width: 50%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo-square {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  background-color: var(--color1);
+  animation: blink 1s linear infinite;
+}
+
+.nav-link-container {
+  width: 50%;
+}

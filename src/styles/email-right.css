@@ -1,0 +1,22 @@
+.email-right {
+  position: fixed;
+  top: 55%;
+  right: 100px;
+}
+
+.email-right a {
+  writing-mode: vertical-rl;
+  color: rgb(19, 119, 53);
+  font-size: 20px;
+  letter-spacing: 3px;;
+}
+
+.email-right::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 200px;
+  margin: 0px auto;
+  margin-top: 30px;
+  background-color: rgb(48, 77, 54);
+}
