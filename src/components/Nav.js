@@ -1,6 +1,4 @@
-import React from "react";
 import '../styles/nav.css';
-import { BsFillArrowRightSquareFill } from "react-icons/bs";
 
 
 

@@ -13,7 +13,7 @@ ul {
 
 ul li {
   font-size: 35px;
-  color: var(--color1);
+  color: rgb(48, 77, 54);
   margin-top: 15px;
 }
 
@@ -29,4 +29,9 @@ ul li a {
   margin: 0px auto;
   margin-top: 30px;
   background-color: rgb(48, 77, 54);
+}
+
+ul li:hover {
+color: var(--color1);
+transition: .5s ease-out;
 }

@@ -1,5 +1,9 @@
-import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiTwotoneMail, AiOutlineChrome, AiFillChrome } from "react-icons/ai";
+import { 
+  AiFillGithub, 
+  AiFillLinkedin, 
+  AiTwotoneMail, 
+  AiOutlineChrome, 
+  AiFillChrome } from "react-icons/ai";
 import '../styles/icons-left.css';
 
 function IconsLeft() {
