@@ -3,7 +3,7 @@ import '../styles/email-right.css';
 function EmailRight() {
   return (
     <div className='email-right'>
-      <a>
+      <a href='#'>
         carlosdev90@gmail.com
       </a>
     </div>

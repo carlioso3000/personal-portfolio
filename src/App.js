@@ -4,20 +4,25 @@ import Hero from './components/Hero.js'
 import IconsLeft from './components/IconsLeft';
 import EmailRight from './components/EmailRight';
 import Terminal from './components/terminal/Terminal';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Work from './pages/work.js';
+import HomePage from './pages/homepage.js'
+import Technologies from './pages/technologies/technologies.js';
+
+
 
 function App() {
   return (
-    <div className="app">
-      <div className='scan'></div>
-      <div className='main'>
-      <Nav />
-      <IconsLeft />
-      <EmailRight />
-      <Hero />
-      <Terminal />
+    <Router>
+      <div className="app">
+        <div className='scan'></div>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/technologies' element={<Technologies />} />
+            <Route path='/work' element={<Work />} />
+          </Routes>
       </div>
-
-    </div>
+    </Router>
   );
 }
 

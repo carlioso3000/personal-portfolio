@@ -24,7 +24,7 @@
   padding: 15px;
 }
 
-.terminal h2, h3, h4, p {
+.terminal h2, .terminal h3, .terminal h4, .terminal p {
   font-size: 14px;
   font-weight: 400;
   margin-top: 0;

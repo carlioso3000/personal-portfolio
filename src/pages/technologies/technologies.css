@@ -1,0 +1,36 @@
+.technologies-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+.technologies-title-container {
+  margin: auto;
+}
+
+.technologies-box-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 65%;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 20px auto;
+}
+
+.technologies-description {
+  margin-top: 20px;
+}
+.technologies-description p {
+  color: white;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin-block-end: 15px;
+}

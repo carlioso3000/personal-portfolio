@@ -6,9 +6,10 @@
 
 .email-right a {
   writing-mode: vertical-rl;
-  color: rgb(19, 119, 53);
+  color: var(--tertiary-color);
   font-size: 20px;
-  letter-spacing: 3px;;
+  letter-spacing: 3px;
+  text-decoration: none;
 }
 
 .email-right::after {
@@ -18,5 +19,10 @@
   height: 200px;
   margin: 0px auto;
   margin-top: 30px;
-  background-color: rgb(48, 77, 54);
+  background-color: var(--tertiary-color);
+}
+
+.email-right a:hover {
+  color: var(--secondary-color);
+  transition: .5s ease-out;
 }

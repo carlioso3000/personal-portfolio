@@ -1,0 +1,14 @@
+.box-content {
+  display: flex;
+    align-items: center;
+    height: 60px;
+    background: var(--tertiary-color);
+    margin: 1%;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    flex: 0 1 30%;
+}
+
+.box-icon i{
+  color: white;
+}

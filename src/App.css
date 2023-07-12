@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=PT+Mono&family=Rubik+Distressed&family=Rubik+Marker+Hatch&family=VT323&display=swap');
-
-:root {
-  --color1: #1BDA16;
-}
 html {
   box-sizing: border-box;
   width: 100%;
+  height: 100vh;
   scroll-behavior: smooth;
 }
 * {
@@ -13,17 +10,15 @@ html {
   padding: 0;
 }
 
-h1 {
+/* h1 {
   color: var(--color1);
   font-family: vt323;
   font-weight: 100;
   letter-spacing: 2px;
   text-shadow: 0 0 10px #1BDA16;
-}
+} */
 .app {
-  background-image: linear-gradient(90deg,
-      rgb(14, 14, 20) 25%, rgb(3, 3, 0) 25%, rgb(0, 0, 0) 50%,
-      rgb(0, 0, 0) 50%, rgb(0, 34, 7) 75%, rgb(0, 32, 12) 75%, rgb(0, 0, 0));
+  background-image: var(--crt-background);
   background-size:6px 6px;
   animation: scanlines 10s linear infinite;
 }
