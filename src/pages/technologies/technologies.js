@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import TechBox from '../../components/technologie-box/techBox';
 import './technologies.css';
 import Title from '../../components/commons/title.js'
-import BackArrow from '../../components/commons/backArrow';
+import BackHomePage from '../../components/commons/backHomePage';
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt, FaBootstrap, FaSass, FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
@@ -11,13 +11,6 @@ import { BiLogoJavascript } from "react-icons/bi";
 function Technologies() {
   return (
     <div className='technologies-page-container'>
-      <div className='technologies-title-container'>
-      <Title 
-      text={"My Technical Skills"}
-      color={"var(--primary-color)"}
-      font={"monospace"}
-      />
-      </div>
       <div className='technologies-box-container'>
         <TechBox
         icon={<AiFillHtml5 />}
@@ -37,6 +30,13 @@ function Technologies() {
         <TechBox
         icon={<FaReact />}
         text={"REACT"} />
+      </div>
+      <div className='technologies-title-container'>
+      <Title 
+      text={"My Technical Skills"}
+      color={"var(--primary-color)"}
+      font={"monospace"}
+      />
       </div>
       <div className='technologies-description'>
         <p>As a web developer, I have dedicated myself to learning and mastering the latest technologies in the field. My technical skills include proficiency in HTML, CSS, Bootstrap, SASS, React, and JavaScript. These technologies form the foundation of my development stack and enable me to build modern, responsive, and user-friendly web applications. I am constantly expanding my knowledge and staying up-to-date with the latest trends and best practices in web development</p>

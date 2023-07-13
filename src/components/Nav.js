@@ -36,7 +36,7 @@ function Nav() {
 				<ol>
 					<li><Link to="/">Home</Link></li>
 					<li><Link to="/technologies">Technologies</Link></li>
-					<li><Link to="/work">Work</Link></li>
+					<li><Link to="/work">Projects</Link></li>
 					<li><a href="#">Contact</a></li>
 				</ol>
 			</div>

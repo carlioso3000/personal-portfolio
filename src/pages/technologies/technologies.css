@@ -9,7 +9,7 @@
 
 
 .technologies-title-container {
-  margin: auto;
+  margin: 80px 0 0 70px;
 }
 
 .technologies-box-container{
@@ -22,15 +22,17 @@
   width: 65%;
   background-color: var(--primary-color);
   border-radius: 15px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 120px;
 }
 
 .technologies-description {
   margin-top: 20px;
 }
 .technologies-description p {
-  color: white;
+  color: gray;
   letter-spacing: 2px;
   line-height: 30px;
   margin-block-end: 15px;
+  font-family: "Fira Code", sans-serif;
 }

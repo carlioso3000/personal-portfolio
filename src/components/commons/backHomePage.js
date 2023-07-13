@@ -1,14 +1,13 @@
 import {AiFillHome} from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import '../../styles/back-arrow.css'
+import '../../styles/back-home-page.css'
 
-function BackArrow() {
+function BackHomePage() {
   return (
-    <div className="back-arrow-container">
+    <div className="back-home-container">
       <Link to="/"><AiFillHome /></Link>
-      <span>Home</span>
     </div>
   )
 }
 
-export default BackArrow;
+export default BackHomePage;

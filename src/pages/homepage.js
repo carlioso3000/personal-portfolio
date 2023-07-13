@@ -9,6 +9,7 @@ import EmailRight from '../components/EmailRight';
 function HomePage() {
   return (
     <div>
+      <div className='scan'></div>
       <Nav />
       <IconsLeft />
       <EmailRight />

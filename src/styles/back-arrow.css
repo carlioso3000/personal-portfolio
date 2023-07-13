@@ -1,9 +1,0 @@
-.back-arrow-container {
-  display: flex;
-  background-color: gray;
-  padding: 60px 0 0 60px;
-}
-
-.back-arrow-container span {
-  color: white;
-}
