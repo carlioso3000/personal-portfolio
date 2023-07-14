@@ -1,8 +1,26 @@
 .projects-page-container {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   padding-top: 50px;
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.projects-title-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card-container {
+  border-radius: 10px;
+  flex-basis: calc((33.33% - 20px));
+  margin: 30px;
 }

@@ -1,12 +1,9 @@
 .back-home-container {
   display: flex;
-  position: fixed;
-  top: 70px;
-  left: 350px;
+  height: 100%;
+  font-size: 50px;
 }
 
-.back-home-container span {
-  color: white;
-  font-weight: 700;
-  margin-left: 40px;
+.back-home-icon {
+  margin-top: 6px;
 }

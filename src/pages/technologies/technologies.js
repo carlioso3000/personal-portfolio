@@ -11,6 +11,15 @@ import { BiLogoJavascript } from "react-icons/bi";
 function Technologies() {
   return (
     <div className='technologies-page-container'>
+    <div className='technologies-title-container'>
+      <BackHomePage />
+      <Title 
+        text={"ALL MY SKILLS"}
+        color={"var(--secondary-color)"}
+        font={"VT323"}
+        size={"58px"}
+      />
+    </div>
       <div className='technologies-box-container'>
         <TechBox
         icon={<AiFillHtml5 />}
@@ -30,13 +39,6 @@ function Technologies() {
         <TechBox
         icon={<FaReact />}
         text={"REACT"} />
-      </div>
-      <div className='technologies-title-container'>
-      <Title 
-      text={"My Technical Skills"}
-      color={"var(--primary-color)"}
-      font={"monospace"}
-      />
       </div>
       <div className='technologies-description'>
         <p>As a web developer, I have dedicated myself to learning and mastering the latest technologies in the field. My technical skills include proficiency in HTML, CSS, Bootstrap, SASS, React, and JavaScript. These technologies form the foundation of my development stack and enable me to build modern, responsive, and user-friendly web applications. I am constantly expanding my knowledge and staying up-to-date with the latest trends and best practices in web development</p>
