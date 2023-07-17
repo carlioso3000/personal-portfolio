@@ -4,6 +4,7 @@ import IconsLeft from '../../components/IconsLeft.js';
 import EmailRight from '../../components/EmailRight.js';
 import BackHomePage from '../../components/commons/backHomePage';
 import Title from '../../components/commons/title';
+import FadeIn from '../../components/fade-in/fadeIn';
 
 import './projects.css';
 
@@ -11,8 +12,10 @@ import './projects.css';
 function Projects() {
   return (
     <div className='projects-page-container'>
-      <IconsLeft />
-      <EmailRight />
+      <FadeIn delay={350}>
+        <EmailRight />
+        <IconsLeft />
+      </FadeIn>
       
       {/*<Link to='/'><button>Volver a home</button></Link>*/} 
 
@@ -27,6 +30,7 @@ function Projects() {
       </div>
 
       
+      <FadeIn delay={350}>
       <div className='projects-container'>
         <ProjectCard 
         imgSrc={'/pokedex.png'}
@@ -54,6 +58,7 @@ function Projects() {
         tags={['JAVASCRIPT', 'HTML5', 'CSS3', 'REACT']}
         />
       </div>
+      </FadeIn>
     </div>
   )
 }

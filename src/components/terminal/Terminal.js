@@ -43,7 +43,7 @@ function Terminal() {
 
 
   return (
-      <section className="terminal">
+      <section id="terminal" className="terminal">
         <div className="terminal-container">
           <div className="terminal-head">
             <h2>Bienvenido a la consola de comandos. Version [1.0.1204.206]</h2>

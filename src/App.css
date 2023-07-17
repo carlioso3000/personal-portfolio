@@ -10,6 +10,14 @@ html {
   padding: 0;
 }
 
+.background {
+  background-image: var(--crt-background);
+  background-size:6px 6px;
+  animation: scanlines 10s linear infinite;
+}
+
+
+
 /* h1 {
   color: var(--color1);
   font-family: vt323;
@@ -17,11 +25,7 @@ html {
   letter-spacing: 2px;
   text-shadow: 0 0 10px #1BDA16;
 } */
-.app {
-  background-image: var(--crt-background);
-  background-size:6px 6px;
-  animation: scanlines 10s linear infinite;
-}
+
 
 .main {
   width: 100%;

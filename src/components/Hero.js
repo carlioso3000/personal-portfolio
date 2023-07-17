@@ -1,13 +1,15 @@
 import '../styles/hero.css';
 import Title from './commons/title.js';
+import { useState, useEffect } from 'react';
 
 function Hero() {
+  
   return (
     <section id='hero-section' className="hero">
       <Title
       text={"Hi, my name is"} 
       font={"monospace"}
-      color={"var(--color1)"}
+      color={"green"}
       />
 
       <h2 className='hero-subtitle'>Carlos Cabrera.</h2>
@@ -18,7 +20,7 @@ function Hero() {
         </p>
       </div>
       <div className='call-to-action'>
-        <button type='button' className='btn'>Lets work together!</button>
+        <a href='#terminal' className='btn'>Try the Console</a>
       </div>
     </section>
   )

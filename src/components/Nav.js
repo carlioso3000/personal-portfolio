@@ -33,12 +33,12 @@ function Nav() {
 			</div>
 
 			<div className="nav-link-container">
-				<ol>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/technologies">Technologies</Link></li>
-					<li><Link to="/work">Projects</Link></li>
-					<li><a href="#">Contact</a></li>
-				</ol>
+				<ul>
+					<li><Link to="/">home</Link></li>
+					<li><Link to="/technologies">skills</Link></li>
+					<li><Link to="/work">projects</Link></li>
+					<li><a href="#">contact</a></li>
+				</ul>
 			</div>
 
 		</nav>

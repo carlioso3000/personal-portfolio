@@ -20,11 +20,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 65%;
-  background-color: var(--primary-color);
+  width: 80%;
+  background-color: #0C8C34;
   border-radius: 15px;
   margin: auto;
   margin-top: 120px;
+}
+
+.box-content {
+  background-color: #021709;
 }
 
 .technologies-description {
@@ -36,4 +40,16 @@
   line-height: 30px;
   margin-block-end: 15px;
   font-family: "Fira Code", sans-serif;
+}
+
+.box-icon i {
+  font-size: xxx-large;
+  color: var(--secondary-color);
+}
+
+.box-text p {
+  font-family: 'VT323';
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 3px;
 }
