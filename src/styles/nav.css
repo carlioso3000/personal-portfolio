@@ -12,12 +12,12 @@
 .nav-link-container ul {
   display: flex;
   align-items: center;
-  border-bottom: 1.8px solid rgba(0, 128, 0, 0.459);
+  border-bottom: 1.8px solid rgb(54, 54, 54);
   list-style: none;
 }
 
 li {
-  color: green;
+  color: var(--secondary-color);
   font-weight: 800;
   font-size: .9em;
   font-family: sans-serif;
@@ -39,13 +39,9 @@ li {
   border-radius: 2px;
 }
 
-.nav ul li::marker {
-  font-size: 15px;
-  color: var(--primary-color)
-}
-
 .logo {
   width: 50%;
+  height: 50%;
 }
 
 @keyframes blink {
@@ -63,9 +59,9 @@ li {
 .logo-square {
   width: 20px;
   height: 20px;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 5px;
-  background-color: var(--color1);
+  background-color: var(--secondary-color);
   animation: blink 1s linear infinite;
 }
 

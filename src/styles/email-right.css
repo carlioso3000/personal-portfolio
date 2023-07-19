@@ -7,7 +7,7 @@
 .email-right a {
   writing-mode: vertical-rl;
   color: var(--tertiary-color);
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 3px;
   text-decoration: none;
 }
@@ -24,5 +24,6 @@
 
 .email-right a:hover {
   color: var(--secondary-color);
-  transition: .5s ease-out;
+  transition: .2s ease-out;
+  transform: translateY(-2px);
 }

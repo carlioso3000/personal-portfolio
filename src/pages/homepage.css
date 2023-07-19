@@ -6,3 +6,31 @@
 .fade-in.visible {
   opacity: 1;
 }
+
+.screen:before {
+  animation: wave 15s infinite ease-in-out;
+  content: "";
+  height: 1vh;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+@keyframes wave {
+  0% {
+    box-shadow: 0 -10vh 20vh #0c0;
+    top: -20vh;
+  }
+  48%, 52% {
+    box-shadow: 0 -10vh 20vh #090;
+  }
+  50% {
+    box-shadow: 0 -10vh 20vh #060;
+  }
+  100% {
+    box-shadow: 0 -10vh 20vh #0c0;
+    top:195vh;
+  }
+}

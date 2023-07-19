@@ -13,8 +13,8 @@ import './homepage.css';
 function HomePage() {
 
   return (
-    <div>
-    <div className='scan'></div>
+    <div className='screen'>
+    {/*<div className='scan'></div>*/}
     <FadeIn delay={350}>
       <Nav />
     </FadeIn>

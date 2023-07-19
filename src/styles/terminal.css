@@ -65,3 +65,7 @@ pre {
 .arrow {
   font-weight: 700;
 }
+
+.important-text {
+  color: var(--primary-color);
+}

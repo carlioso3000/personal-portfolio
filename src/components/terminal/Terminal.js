@@ -47,8 +47,7 @@ function Terminal() {
         <div className="terminal-container">
           <div className="terminal-head">
             <h2>Bienvenido a la consola de comandos. Version [1.0.1204.206]</h2>
-            <p>Por favor introduce un comando valido.</p>
-            <p>Introduce !help para ver una lista de comandos</p>
+            <p>Introduce <span className="important-text">help</span> para ver una lista de comandos</p>
           </div>
 
           <pre>{output}</pre>
