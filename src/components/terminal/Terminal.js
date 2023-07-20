@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import '../../styles/terminal.css';
-import { handleCommand } from "../../utils/terminalLogic/terminalLogic";
+import { handleCommand, onKeyPress, sounds } from "../../utils/terminalLogic/terminalLogic";
 
 function Terminal() {
 
@@ -40,6 +40,17 @@ function Terminal() {
     }, 1000);
   };
 
+  /*Handle the onKeyPress function*/
+
+  const handlesound = event => {
+    setCommand(event.target.value);
+    onKeyPress(sounds)
+  };
+
+  const handleInput = event => {
+    handleChange(event);
+    handlesound(event);
+  };
 
 
   return (
@@ -56,7 +67,7 @@ function Terminal() {
             <input 
             type="text" 
             value={command}
-            onChange={handleChange}
+            onChange={handleInput}
             />
           </form>
         </div>
