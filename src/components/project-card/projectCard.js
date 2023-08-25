@@ -1,40 +1,39 @@
 import { useState } from 'react';
 import './project-card.css';
 
-const tagColors = {
-  HTML5: '#E96228',
-  CSS3: '#2862E9',
-  JAVASCRIPT: '#EFD81D',
-  REACT: '#5ED3F3',
-  BOOTSTRAP: '#8512F7',
-  SASS: '#C86796'
-};
-
-function ProjectCard({ imgSrc, imgAlt, tags }) {
+function ProjectCard({ imgSrc, imgAlt, tags, title }) {
   const [hover, setHover] = useState(false);
 
   return (
     <div className='card-container'>
-      <img 
-      src={imgSrc}
-      alt={imgAlt}
-      onMouseEnter={()=> setHover(true)}
-      onMouseLeave={()=> setHover(false)}
-      />
+      <div className='card-img'>
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          onMouseEnter={()=> setHover(true)}
+          onMouseLeave={()=> setHover(false)}
+          />
 
-      {hover && (
-        <div className='tags-container'>
-          {tags.map((tag, index)=>(
-            <span 
-            key={index} 
-            className='tag'
-            >
-              {tag}
-              </span>
-          ))}
+          {hover && (
+            <div className='tags-container'>
+              {tags.map((tag, index)=>(
+                <span 
+                key={index} 
+                className='tag'
+                >
+                  {tag}
+                  </span>
+              ))}
+            </div>
+          )};
+      </div>
+      <div className='card-body'>
+        <h2 className='card-title'>{title}</h2>
+        <div className='card-button-container'>
+          <button className='card-button'>Demo</button>
+          <button className='card-button'>GitHub</button>
         </div>
-      )}
-      
+      </div>
     </div>
   )
 };

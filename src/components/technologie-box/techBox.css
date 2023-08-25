@@ -8,7 +8,9 @@
     justify-content: space-evenly;
     flex: 0 1 30%;
 }
-
+.box-content:hover {
+  cursor: default;
+}
 .box-icon i{
   color: white;
 }

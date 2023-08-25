@@ -35,8 +35,9 @@ function Nav() {
 			<div className="nav-link-container">
 				<ul>
 					<li><Link to="/">home</Link></li>
-					<li><Link to="/technologies">skills</Link></li>
-					<li><Link to="/work">projects</Link></li>
+          <li><a href="#terminal-section">Terminal</a></li>
+					<li><a href="#skills-section">Skills</a></li>
+					<li><a href="#projects-section">Projects</a></li>
 					<li><a href="#">contact</a></li>
 				</ul>
 			</div>

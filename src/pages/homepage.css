@@ -1,6 +1,10 @@
+
 .fade-in {
   opacity: 0;
   transition: opacity 1s;
+}
+section {
+  height: 100vh;
 }
 
 .fade-in.visible {
@@ -17,6 +21,8 @@
   right: 0;
   z-index: 1;
 }
+section:first-of-type {
+}
 
 @keyframes wave {
   0% {
@@ -31,6 +37,6 @@
   }
   100% {
     box-shadow: 0 -10vh 20vh #0c0;
-    top:195vh;
+    top:410vh;
   }
 }

@@ -4,11 +4,12 @@ import sound3 from '../../sound/key3.mp3';
 import sound4 from '../../sound/key4.mp3';
 
 export const commands = {
-  "help": "Comandos disponibles: about, work, skills, contact, clear. Escribe 'help' seguido de algun comando disponible para saber mas acerca de ese comando",
+  "help": "Comandos disponibles: about, work, skills, download cv, contact, clear. Escribe 'help' seguido de algun comando disponible para saber mas acerca de ese comando",
   "about": "Link a la pagina about",
   "work": ["https://twitter.com/home", "https://www.instagram.com/", "https://www.tiktok.com/"],
-  "skills": ["Javascript", "React", "html,css,bootstrp", "Haz click aquí para saber más..."],
-  "contact": "carlosdev90@gmail.com"
+  "skills": ["Javascript", "React.js", "html, css, bootstrp, sass", "Node.js", "AntDesign, Tailwind CSS", "Haz click aquí para saber más..."],
+  "contact": "carlosdev90@gmail.com",
+  "download cv": "",
 }
 
 

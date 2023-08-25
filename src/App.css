@@ -14,17 +14,8 @@ html {
   background-image: var(--crt-background);
   background-size:6px 6px;
   animation: scanlines 10s linear infinite;
+  min-height: 500vh;
 }
-
-
-
-/* h1 {
-  color: var(--color1);
-  font-family: vt323;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #1BDA16;
-} */
 
 
 .main {
