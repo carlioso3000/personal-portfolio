@@ -57,8 +57,8 @@ function Terminal() {
       <section id="terminal" className="terminal">
         <div className="terminal-container">
           <div className="terminal-head">
-            <h2>Bienvenido a la consola de comandos. Version [1.0.1204.206]</h2>
-            <p>Introduce <span className="important-text">help</span> para ver una lista de comandos</p>
+            <h2>Welcome to the console. Version [1.0.1204.206]</h2>
+            <p>Enter <span className="important-text">help</span> to see a list of commands</p>
           </div>
 
           <pre>{output}</pre>

@@ -21,8 +21,6 @@ section {
   right: 0;
   z-index: 1;
 }
-section:first-of-type {
-}
 
 @keyframes wave {
   0% {

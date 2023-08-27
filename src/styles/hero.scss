@@ -48,6 +48,34 @@
   align-items: center;
 }
 
+.hero-text a {
+  &:visited {
+    color: inherit;
+  }
+  button{
+    font-family: 'Fira Code';
+    font-size: large;
+    width: 150px;
+    height: 35px;
+    color: var(--tertiary-color);
+    background-color: rgba(0, 128, 0, 0.425);
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--secondary-color);
+    }
+    animation: neon-flicker 6s infinite;
+  }
+}
+@keyframes neon-flicker {
+  0% { opacity: 1; }
+  15% { opacity: 0.9; }
+  27% { opacity: 1; }
+  29% { opacity: 0.6; }
+  32% { opacity: 0.8; }
+}
+
 /*bounce animation icon*/
 
 @keyframes bounce {

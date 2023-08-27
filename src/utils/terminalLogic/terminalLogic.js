@@ -2,21 +2,33 @@ import sound1 from '../../sound/key1.mp3';
 import sound2 from '../../sound/key2.mp3';
 import sound3 from '../../sound/key3.mp3';
 import sound4 from '../../sound/key4.mp3';
+import cv from '../../assets/cv/cv.pdf';
 
 export const commands = {
-  "help": "Comandos disponibles: about, work, skills, download cv, contact, clear. Escribe 'help' seguido de algun comando disponible para saber mas acerca de ese comando",
+  "help": "Available commands: work, skills, download cv, contact, clear",
   "about": "Link a la pagina about",
-  "work": ["https://twitter.com/home", "https://www.instagram.com/", "https://www.tiktok.com/"],
-  "skills": ["Javascript", "React.js", "html, css, bootstrp, sass", "Node.js", "AntDesign, Tailwind CSS", "Haz click aquí para saber más..."],
-  "contact": "carlosdev90@gmail.com",
+  "work": ["https://react-pokedex-app-omega.vercel.app/", "https://pomodoro-clock-eight.vercel.app/", "https://fincamaranata.site/", "https://nescritor.com/"],
+  "skills": ["Javascript", "React.js", "html, css, bootstrp, sass", "Node.js", "AntDesign, Tailwind CSS"],
+  "contact": ["carlosdev90@gmail.com", "https://www.linkedin.com/in/carlos-cabrera-323678113/"],
   "download cv": "",
 }
+export function handleDownloadCV() {
+  // Crear un elemento <a> con el atributo href establecido en la ruta del archivo PDF
+  const link = document.createElement('a');
+  link.href = cv;
+  link.download = 'cv.pdf';
 
+  // Simular un clic en el elemento <a> para iniciar la descarga
+  link.click();
+}
 
 
 export function handleCommand(command) {
   if (command === "clear") {
     return (setOutput) => setOutput("");
+  } else if (command === "download cv") {
+    handleDownloadCV();
+    return "CV has been downloaded successfully";
   }
   const response = commands[command];
   if (response) {
@@ -26,9 +38,10 @@ export function handleCommand(command) {
       return response;
     }
   } else {
-    return "El comando no es valido. Introduce !help para ver los comandos disponibles"
+    return "The command is not valid. Enter !help to see the available commands";
   }
 }
+
 
 export const sounds = [sound1, sound2, sound3, sound4];
 

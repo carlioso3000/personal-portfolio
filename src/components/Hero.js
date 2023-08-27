@@ -1,5 +1,6 @@
-import '../styles/hero.css';
+import '../styles/hero.scss';
 import Title from './commons/title.js';
+import cv from '../assets/cv/cv.pdf';
 import { useState, useEffect } from 'react';
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -19,6 +20,11 @@ function Hero() {
       <div className='hero-text-container'>
         <p className='hero-text'>
         I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
+        <span style={{ display: 'inline-block' }}>
+          <a href={cv} download>
+            <button>download cv</button>
+          </a>
+        </span>
         </p>
       </div>
       <div className='call-to-action'>
