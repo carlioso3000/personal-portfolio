@@ -1,0 +1,96 @@
+.card-container {
+  padding: 30px 20px;
+  min-width: 320px;
+  min-height: 320px;
+  overflow: hidden;
+  background-color: #021709;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+.card-body {
+  min-height: 290px;
+}
+.card-body body .card-title {
+  min-height: 90px;
+}
+.card-body header{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--tertiary-color);
+
+    .details{
+      svg {
+        font-size: 30px;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+    .external-links {
+      svg {
+        font-size: 25px;
+        margin: 0 10px;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+  }
+}
+a:visited {
+  color: inherit;
+}
+.card-body body {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+
+    h2 {
+      font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+      font-size: 1.4em;
+      color: rgba(204,214,240);
+    }
+    p {
+      font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+      margin-top: 10px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.568);
+    }
+}
+
+.card-body footer {
+  padding: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin-right: 10px;
+      font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+      font-size: 12px;
+    }
+  }
+}
+
+.tags-container {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/*usar las cards projects del portfolio de britany chiang*/
+
+.tags-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

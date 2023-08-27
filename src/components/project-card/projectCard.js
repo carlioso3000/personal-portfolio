@@ -1,38 +1,42 @@
-import { useState } from 'react';
-import './project-card.css';
+import { BiFolder } from "react-icons/bi";
+import './project-card.scss';
 
-function ProjectCard({ imgSrc, imgAlt, tags, title }) {
-  const [hover, setHover] = useState(false);
-
+function ProjectCard({ icon, tags, title, description, url}) {
   return (
     <div className='card-container'>
-      <div className='card-img'>
-        <img
-          src={imgSrc}
-          alt={imgAlt}
-          onMouseEnter={()=> setHover(true)}
-          onMouseLeave={()=> setHover(false)}
-          />
-
-          {hover && (
-            <div className='tags-container'>
-              {tags.map((tag, index)=>(
-                <span 
-                key={index} 
-                className='tag'
-                >
-                  {tag}
-                  </span>
-              ))}
-            </div>
-          )};
-      </div>
       <div className='card-body'>
-        <h2 className='card-title'>{title}</h2>
-        <div className='card-button-container'>
-          <button className='card-button'>Demo</button>
-          <button className='card-button'>GitHub</button>
-        </div>
+        <header>
+          <div className='details'>
+            <BiFolder />
+          </div>
+          <div className='external-links'>
+            {icon.map((Icon, index) => (
+              <a
+                key={index}
+                href={url && url[index]}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Icon />
+              </a>
+            ))}
+          </div>
+        </header>
+        <body>
+          <div className='card-title'>
+            <h2>{title}</h2>
+          </div>
+          <div className='card-description'>
+            <p>{description}</p>
+          </div>
+        </body>
+        <footer>
+          <ul>
+            {tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </ul>
+        </footer>
       </div>
     </div>
   )
