@@ -53,3 +53,22 @@
   color: #fff;
   letter-spacing: 3px;
 }
+
+@media (max-width: 950px) {
+  .technologies-box-container {
+    margin-top: 30px;
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .technologies-box-container {
+    width: 300px;
+    flex-direction: column;
+  }
+  .box-content {
+    padding: 5px;
+    width: 240px;
+    justify-content: flex-start;
+  }
+}

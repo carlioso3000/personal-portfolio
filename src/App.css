@@ -15,6 +15,8 @@ html {
   background-size:6px 6px;
   animation: scanlines 10s linear infinite;
   min-height: 500vh;
+  background-attachment: fixed;
+  background-color: rgb(107, 73, 73);
 }
 
 

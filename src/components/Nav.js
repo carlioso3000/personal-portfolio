@@ -1,11 +1,15 @@
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import '../styles/nav.css';
 import { Link } from 'react-router-dom';
-
+import { FaHamburger } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiTwotoneMail, AiFillChrome } from "react-icons/ai";
 
 
 function Nav() {
-	
+  const [showMenu, setShowMenu] = useState(false);
+  console.log('showMenu:', showMenu);
+
 	useEffect(() => {
     let prevScrollpos = window.scrollY;
     const handleScroll = () => {
@@ -25,24 +29,36 @@ function Nav() {
     };
   }, []);
 
+  const handleMenuClick = () => {
+    console.log('handleMenuClick called');
+    setShowMenu(!showMenu);
+  };
 
-  return(
+  return (
     <nav className="nav" id="nav">
-			<div className="logo">
-				<div className="logo-square"></div>
-			</div>
-
-			<div className="nav-link-container">
-				<ul>
-					<li><Link to="/">home</Link></li>
-          <li><a href="#terminal-section">Terminal</a></li>
-					<li><a href="#skills-section">Skills</a></li>
-					<li><a href="#projects-section">Projects</a></li>
-					<li><a href="#">contact</a></li>
-				</ul>
-			</div>
-
-		</nav>
+      <div className="logo">
+        <div className="logo-square"></div>
+      </div>
+      <button className="open-menu" onClick={handleMenuClick}>
+        <FaHamburger />
+      </button>
+      {/* <div className={`nav-menu-container ${showMenu ? 'show' : ''}`}> */}
+        <ul className={`main-menu ${showMenu ? 'show' : ''}`}>
+          <li><Link to="/" onClick={handleMenuClick}>home</Link></li>
+          <li><a href="#terminal-section" className="terminal-link" onClick={handleMenuClick}>Terminal</a></li>
+          <li><a href="#skills-section" onClick={handleMenuClick}>Skills</a></li>
+          <li><a href="#projects-section" onClick={handleMenuClick}>Projects</a></li>
+          <li><a href="#" onClick={handleMenuClick}>contact</a></li>
+          <button className='close-menu' onClick={handleMenuClick}><AiOutlineClose /></button>
+          <span className='icons'>
+            <a href='https://github.com/carlioso3000' target='_blank'><AiFillGithub /></a>
+            <a href='https://www.linkedin.com/in/carlos-cabrera-323678113/' target='_blank'><AiFillLinkedin /></a>
+            <a href='mailto:carliosogames@gmail.com' target='_blank'><AiTwotoneMail /></a>
+            <a href='' target='_blank'><AiFillChrome /></a>
+          </span>
+        </ul>
+      {/* </div> */}
+    </nav>
   )
 };
 

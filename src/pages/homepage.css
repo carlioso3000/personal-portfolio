@@ -22,7 +22,7 @@ section {
   z-index: 1;
 }
 
-@keyframes wave {
+/* @keyframes wave {
   0% {
     box-shadow: 0 -10vh 20vh #0c0;
     top: -20vh;
@@ -36,5 +36,40 @@ section {
   100% {
     box-shadow: 0 -10vh 20vh #0c0;
     top:410vh;
+  }
+} */
+
+/*wave mas suave*/
+
+/* @keyframes wave {
+  0% {
+    box-shadow: 0 -10vh 7vh rgba(0, 204, 0, 0.205);
+    top: -20vh;
+  }
+  48%, 52% {
+    box-shadow: 0 -10vh 7vh rgba(0, 204, 0, 0.205);
+  }
+  50% {
+    box-shadow: 0 -10vh 7vh rgba(0, 204, 0, 0.205);
+  }
+  100% {
+    box-shadow: 0 -10vh 7vh rgba(0, 204, 0, 0.205);
+    top:410vh;
+  }
+} */
+
+
+
+
+
+@media (max-width: 991px) {
+  .icons-list {
+    display: none;
+  }
+  .email-right {
+    display: none;
+  }
+  #terminal-section {
+    display: none;
   }
 }

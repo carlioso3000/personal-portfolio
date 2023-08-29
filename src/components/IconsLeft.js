@@ -1,8 +1,7 @@
 import { 
   AiFillGithub, 
   AiFillLinkedin, 
-  AiTwotoneMail, 
-  AiOutlineChrome, 
+  AiTwotoneMail,
   AiFillChrome } from "react-icons/ai";
 import '../styles/icons-left.css';
 

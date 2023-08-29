@@ -7,9 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: var(--crt-background);
-  background-size:6px 6px;
-  animation: scanlines 10s linear infinite;
+  background-color: transparent; 
+  // background-image: var(--crt-background);
+  // background-size:6px 6px;
+  // animation: scanlines 10s linear infinite;
 }
 .loader h1 {
   font-size: 60px;

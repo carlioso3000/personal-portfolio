@@ -4,32 +4,24 @@
   align-items: center;
   margin-top: 40px;
   min-height: 100vh;
-  align-items: flex-start;
   color: var(--primary-color);
-}
-
-.hero h1 {
-  margin-left: 300px;
 }
 
 .hero-subtitle {
   font-family: 'Fira Code';
   font-size: 54px;
   margin-top: 35px;
-  margin-left: 300px;
 }
 
 .hero-description {
   font-family: 'Fira Code';
   font-size: 36px;
   margin-top: 20px;
-  margin-left: 300px;
 }
 
 .hero-text-container {
   width: 750px;
   margin-top: 25px;
-  margin-left: 300px;
 }
 
 .hero-text {
@@ -114,4 +106,58 @@
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+}
+.hero-container {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+
+/*MEDIA QUERYS MEDIA QUERYS MEDIA QUERYS MEDIA QUERYS MEDIA QUERYS MEDIA QUERYS */
+
+@media (max-width: 1200px) {
+  .hero-container {
+    align-items: center;
+  }
+}
+.hero-container h2 {
+  font-size: 2rem;
+}
+.hero-container h3 {
+  font-size: 1.2rem;
+}
+.hero-text-container{
+  width: auto;
+}
+.hero-container p {
+  font-size: .8rem;
+}
+
+@media (max-width: 991px) {
+  .hero-container {
+    width: auto;
+  }
+  .hero-text-container {
+    width: auto;
+    margin-top: 25px;
+  }
+  .hero-text-container{
+    width: auto;
+    padding: 0 50px;
+  }
+  .call-to-action {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .call-to-action {
+    display: none;
+  }
+  .cv-button {
+    display: none;
+  }
 }
