@@ -9,6 +9,7 @@ import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 
 
+
 function Skills() {
   return (
     <div className='technologies-page-container'>
