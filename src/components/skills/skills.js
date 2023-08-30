@@ -6,6 +6,7 @@ import Title from '../commons/title.js'
 import { AiFillHtml5, AiOutlineAntDesign } from "react-icons/ai";
 import { FaCss3Alt, FaBootstrap, FaSass, FaReact, FaNode } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
+import { TbBrandRedux } from "react-icons/tb";
 
 
 function Skills() {
@@ -38,14 +39,16 @@ function Skills() {
             text={"REACT.JS"} 
           />
           <TechBox
-          icon={<FaBootstrap />}
-          text={"BOOTSTRAP"} />
-          <TechBox
-          icon={<FaSass />}
-          text={"SASS"} />
+          icon={<TbBrandRedux />}
+          text={"REDUX"} 
+          />
           <TechBox
             icon={<FaNode />}
             text={"NODE.JS"}
+          />
+          <TechBox
+          icon={<FaBootstrap />}
+          text={"BOOTSTRAP"} 
           />
           <TechBox
             icon={<AiOutlineAntDesign />}

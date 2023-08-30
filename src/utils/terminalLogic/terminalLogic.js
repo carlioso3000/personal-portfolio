@@ -7,7 +7,12 @@ import cv from '../../assets/cv/cv.pdf';
 export const commands = {
   "help": "Available commands: work, skills, download cv, contact, hack, clear",
   "about": "Link a la pagina about",
-  "work": ["https://react-pokedex-app-omega.vercel.app/", "https://pomodoro-clock-eight.vercel.app/", "https://fincamaranata.site/", "https://nescritor.com/"],
+  "work": [
+    "https://react-pokedex-app-omega.vercel.app/",
+    "https://pomodoro-clock-eight.vercel.app/",
+    "https://fincamaranata.site/",
+    "https://nescritor.com/"
+  ],
   "skills": ["Javascript", "React.js", "html, css, bootstrp, sass", "Node.js", "AntDesign, Tailwind CSS"],
   "contact": ["carlosdev90@gmail.com", "https://www.linkedin.com/in/carlos-cabrera-323678113/"],
   "hack": ` **         *******   **             ****     ** **   ******  ********       ********** *******   **    **
@@ -29,8 +34,6 @@ export function handleDownloadCV() {
   // Simular un clic en el elemento <a> para iniciar la descarga
   link.click();
 }
-
-
 export function handleCommand(command) {
   if (command === "clear") {
     return (setOutput) => setOutput("");

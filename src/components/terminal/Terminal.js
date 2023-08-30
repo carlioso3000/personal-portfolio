@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import '../../styles/terminal.css';
 import { handleCommand, onKeyPress, sounds } from "../../utils/terminalLogic/terminalLogic";
 
@@ -20,8 +20,6 @@ function Terminal() {
       return () => clearTimeout(timeoutId);
     }
   }, [response, responseIndex]);
-
-
 
   const handleChange = event => setCommand(event.target.value);
 
@@ -52,7 +50,6 @@ function Terminal() {
     handlesound(event);
   };
 
-
   return (
       <section id="terminal" className="terminal">
         <div className="terminal-container">
@@ -60,8 +57,7 @@ function Terminal() {
             <h2>Welcome to the console. Version [1.0.1204.206]</h2>
             <p>Enter <span className="important-text">help</span> to see a list of commands</p>
           </div>
-
-          <pre>{output}</pre>
+            <pre>{output}</pre>
           <form onSubmit={handleSubmit} className="terminal-form">
             <span className="arrow">&gt;</span>
             <input 
