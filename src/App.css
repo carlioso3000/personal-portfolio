@@ -5,19 +5,23 @@ html {
   height: 100vh;
   scroll-behavior: smooth;
 }
+body {
+  background-image: var(--crt-background);
+  background-size:6px 6px;
+  animation: scanlines 10s linear infinite;
+  background-attachment: fixed;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
-.background {
+/* .background {
   background-image: var(--crt-background);
   background-size:6px 6px;
   animation: scanlines 10s linear infinite;
-  min-height: 500vh;
   background-attachment: fixed;
-  /* background-color: rgb(107, 73, 73); */
-}
+} */
 
 
 .main {
@@ -57,3 +61,9 @@ html {
     transform: translateY(calc(100vh + 4px));
   }
 }
+
+/* @media (max-width: 840px) {
+  .background {
+  min-height: auto;
+  }
+} */
