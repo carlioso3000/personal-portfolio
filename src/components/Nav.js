@@ -3,12 +3,11 @@ import '../styles/nav.css';
 import { Link } from 'react-router-dom';
 import { FaHamburger } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { AiFillGithub, AiFillLinkedin, AiTwotoneMail, AiFillChrome } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiTwotoneMail, AiFillChrome, AiFillHome } from "react-icons/ai";
 
 
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
-  console.log('showMenu:', showMenu);
 
 	useEffect(() => {
     let prevScrollpos = window.scrollY;
@@ -30,17 +29,24 @@ function Nav() {
   }, []);
 
   const handleMenuClick = () => {
-    console.log('handleMenuClick called');
     setShowMenu(!showMenu);
   };
+
+  const homeButtonClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 
   return (
     <nav className="nav" id="nav">
       <div className="logo">
         <div className="logo-square"></div>
       </div>
-      <button className="open-menu" onClick={handleMenuClick}>
-        <FaHamburger />
+      <button className="open-menu">
+        <FaHamburger onClick={handleMenuClick} className='hamburger-icon ' />
+        <AiFillHome onClick={homeButtonClick} className='home-icon' />
       </button>
       {/* <div className={`nav-menu-container ${showMenu ? 'show' : ''}`}> */}
         <ul className={`main-menu ${showMenu ? 'show' : ''}`}>
