@@ -74,3 +74,9 @@ section {
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  section {
+    height: auto;
+  }
+}
