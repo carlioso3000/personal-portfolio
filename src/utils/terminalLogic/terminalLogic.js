@@ -13,7 +13,7 @@ export const commands = {
     "https://fincamaranata.site/",
     "https://nescritor.com/"
   ],
-  "skills": ["Javascript", "React.js", "html, css, bootstrp, sass", "Node.js", "AntDesign, Tailwind CSS"],
+  "skills": ["Javascript", "React.js", "Redux", "Node.js", "html, css, bootstrp, sass",  "AntDesign, Tailwind CSS"],
   "contact": ["carlosdev90@gmail.com", "https://www.linkedin.com/in/carlos-cabrera-323678113/"],
   "hack": ` **         *******   **             ****     ** **   ******  ********       ********** *******   **    **
 /**        **/////** /**            /**/**   /**/**  **////**/**/////       /////**/// /**////** //**  ** 

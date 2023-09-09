@@ -25,7 +25,7 @@ function Terminal() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newResponse = handleCommand(command);
+    const newResponse = handleCommand(command.toLocaleLowerCase());
     setOutput((prevOutput) => prevOutput + command + "\n");
     setCommand("");
     setTimeout(() => {

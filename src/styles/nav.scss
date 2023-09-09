@@ -68,7 +68,7 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 767px) {
+@media (width < 767px) {
   .open-menu {
     display: block;
     position: fixed;
@@ -82,12 +82,20 @@
     position: fixed;
     top: 10px;
     left: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   .home-icon {
     position: fixed;
     top: 10px;
     right: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .main-menu {
@@ -102,13 +110,17 @@
     align-items: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
-  }
-  .main-menu li {
+
+    li {
+      
     margin: 10px 0 10px 0;
-  }
-  .main-menu li a {
+
+    a {
+      
     font-size: 1.9rem;
     font-weight: 400;
+    }
+    }
   }
 
   .main-menu.show {
@@ -122,18 +134,22 @@
     top: 20px;
     right: 20px;
   }
+
   .terminal-link {
     display: none;
   }
+
   .logo {
     display: none;
   }
+
   .icons {
     display: block;
     font-size: 2rem;
-  }
-  .icons svg {
-    margin: 10px;
-    color: var(--primary-color);
+
+    svg {
+      margin: 10px;
+      color: var(--primary-color);
+    }
   }
 }
